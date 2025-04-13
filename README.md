@@ -11,7 +11,7 @@ Basit bir HTML ve CSS kullanarak yaptığım iletişim formu çalışması. Resp
 Form sadece görsel amaçlı, veri gönderimi yapılmıyor.
 
 ## İleride Eklemeyi Düşündüklerim
-
+-Responsive yapıyı geliştirmek.
 - Formun gerçekten çalışması için backend tarafı (mesela PHP ya da Node.js) ekleyebilirim.
 - Gönderilen verileri bir yere kaydetmek ya da e-posta olarak iletmek.
 - Daha gelişmiş input validasyonları (kullanıcı hatalarını önlemek için).
