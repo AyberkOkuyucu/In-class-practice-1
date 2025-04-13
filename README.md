@@ -17,3 +17,4 @@ Form sadece görsel amaçlı, veri gönderimi yapılmıyor.
 - Daha gelişmiş input validasyonları (kullanıcı hatalarını önlemek için).
 - Gece modu (dark mode) eklemek fena olmaz.
 - Belki animasyonlar ya da küçük etkileşimler ile kullanıcı deneyimini artırmak.
+![Ekran görüntüsü 2025-04-13 220754](https://github.com/user-attachments/assets/de62828a-20cf-482d-b02c-4615fbdea81d)
