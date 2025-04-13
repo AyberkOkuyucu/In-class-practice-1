@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: white;
+    --tertiary-color:  #f3f3f3;
+    --quaternary-color:rgb(182, 182, 182);
+    --font-size-base: 16px;
+  }
+body{
+    font-family: "Kanit", sans-serif;
+    background-color: var(--tertiary-color);
+}
+.main-wrapper {
+  max-width: 1200px; /* istediğin genişlik */
+  margin: 0 auto; /* ortalar */
+  padding: 0 20px; /* kenarlardan boşluk */
+}
+.header{
+  text-align: center;
+  padding: 10px;
+}
+.icon-flex {
+    display: flex;
+    width: 100%; /* isteğe bağlı yükseklik */
+  }
+  
+  .icon-box {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons {
+    font-size: 40px;
+    color: var(--secondary-color);
+    border-radius: 100%;
+    
+  }
+  .icon-circle {
+    background-color: var(--primary-color); /* daire rengi */
+    color: white;              /* ikon rengi */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  .icon-circle:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+  }
+  .text-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* üstten hizalama */
+    width: 100%;
+    margin-top: 0;   
+} 
+
+.container-flex {
+    font-size: 17px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-wrapper {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 40px;
+flex-wrap: wrap;
+background-color: var(--tertiary-color);
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  background-color: var(--secondary-color);
+padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 60vh;
+  max-width: 60%;
+}
+
+.contact-form h2 {
+  margin: 20px;
+  font-size: 28px;
+}
+
+.contact-name-mail {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+  margin: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: var(--font-size-base);
+  border: none;
+  border-bottom: 1px solid var(--quaternary-color);
+  border-radius: 4px;
+  
+}
+
+.contact-form button {
+padding: 8px;
+width: 120px;
+background-color: var(--primary-color);
+border: 1px solid var(--primary-color);
+border-radius: 4px;
+color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin: 20px;
+}
+.contact-form button:hover{
+  opacity: 0.8;
+}
+.contact-image {  
+}
+
+.contact-image img {
+height: 588px;
+min-height: 588px;
+}
+.adress{
+  color: rgb(73, 73, 73);
+}
+.blue{
+  color: rgb(77, 219, 238);
+}
+/* RESPONSIVE TASARIM */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .contact-name-mail {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-flex {
+    flex-wrap: wrap;
+  }
+
+  .icon-box {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .text-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-flex {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-box {
+    width: 100%;
+  }
+
+  .contact-form h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
